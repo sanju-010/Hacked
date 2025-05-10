@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>You Got Hacked!</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: lime;
+      font-family: "Courier New", Courier, monospace;
+      text-align: center;
+    }
+
+    .container {
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: red;
+      text-shadow: 2px 2px 10px white;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 15px 0;
+      line-height: 1.5;
+    }
+
+    img {
+      width: 90%;
+      max-width: 300px;
+      margin-top: 20px;
+      animation: shake 1s infinite;
+    }
+
+    @keyframes shake {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(2deg); }
+      50% { transform: rotate(-2deg); }
+      75% { transform: rotate(2deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    .warning {
+      color: yellow;
+      font-size: 1.1rem;
+      margin-top: 30px;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .warning {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>⚠️ YOU GOT HACKED! ⚠️</h1>
+    <p>All your personal data is now ours.</p>
+    <p>Your photos, passwords, and even your fridge contents... 😈</p>
+    <img src="1.png" alt="Hacker Image" />
+    <p class="warning">Sending data to our server...</p>
+  </div>
+</body>
+</html>
